@@ -1,0 +1,81 @@
+﻿@font-face {
+    font-family: Minecraft;
+    src: url(MinecraftTen-VGORe.ttf);
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url(PixelatedEleganceRegular-ovyAA.ttf);
+}
+
+html {
+    font-size: 10px;
+    overflow-y: scroll;
+}
+
+@media (min-width: 768px) {
+    html {
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 15px;
+    }
+}
+
+h1, aside li {
+    font-family: Pixel;
+}
+
+aside h1 {
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+li {
+    font-size: 12px !important;
+}
+
+.minecraft {
+    font-family: Minecraft;
+}
+
+@keyframes color-change {
+    0%, 100% {
+        color: #f87171;
+    }
+
+    25% {
+        color: #fbbf24;
+    }
+
+    50% {
+        color: #34d399;
+    }
+
+    75% {
+        color: #60a5fa;
+    }
+}
+
+.text-color-animate {
+    animation: color-change 1s linear infinite;
+}
+
+code {
+    padding: 0.1em 0.25em;
+    border-radius: 0.375rem;
+}
+
+@media (prefers-color-scheme: light) {
+    code {
+        background-color: rgb(0 0 0 / 10%);
+        color: #111;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    code {
+        background-color: rgb(255 255 255 / 15%);
+        color: #f5f5f5;
+    }
+}
+
